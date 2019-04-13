@@ -117,17 +117,17 @@
 <p>第一步：下载并安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></p>
 <p>进入官网，选择自己对应的操作系统，下载好以后自己选个位置（建议提前建立好文件方便储存，这是个好习惯）安装即可。</p>
 <p>安装完之后同时按住Win+R，然后输入cmd打开控制台并输入以下代码：</p>
-<p><em><code></code>node -v</em><code></code></p>
-<p><code>*npm -v</code>*</p>
+<p><code>node -v</code></p>
+<p><code>npm -v</code></p>
 <p>注意node、npm的后面都有一个空格，如果正常安装，输入这两个命令，会显示它们的版本号。</p>
 <p>第二步：安装Hexo</p>
 <p>我们之前已经安装了Git，所以我们可以使用它的Git Bash Here（右键单击可见），来帮助我们更好的安装Hexo。</p>
 <p>首先我们要新建一个存放Hexo文件的目录，自己创建一个自己能找得到的地方，然后在该目录下，右键然后单击Git Bash Here，就可以打开类似控制台的界面，我们就可以输入命令，进行安装，我们输入以下代码：</p>
-<p><em><code></code>$npm install hexo-cli -g</em><code></code></p>
-<p><code>*$hexo init*</code></p>
-<p><code>*$npm install*</code></p>
-<p><code>*$hexo g*</code></p>
-<p><code></code><em>$hexo s</em>`</p>
+<p><code>$npm install hexo-cli -g</code></p>
+<p><code>$hexo init</code></p>
+<p><code>$npm install</code></p>
+<p><code>$hexo g</code></p>
+<p><code>$hexo s</code></p>
 <p>注意：$是一开始就有的，不用输入，同时注意空格的输入，下文中的代码我将不写$</p>
 <p>上述命令输入完毕后，在我们的浏览器地址栏处输入localhost:4000(4000是默认的端口号)，回车之后，就是见证奇迹的时刻，你的第一个博客的模型就出来了。当然现在它只能本地浏览，我们要做的就是让他可以在互联网上被访问。</p>
 <p><strong>因此，我们要通过GitHub部署到互联网上</strong></p>
@@ -137,7 +137,7 @@
 <p>单击启动项目，在存储库名称填写：<em>你喜欢的名字.github.io</em></p>
 <p><strong>接下来时创建SHH</strong></p>
 <p>在Git Bash（可以直接在桌面使用)输入命令：</p>
-<p><em><code>$ ssh-keygen -t rsa -C &quot;你的邮箱地址&quot;</code></em>（注意，C和你的邮箱地址都是要输入的)</p>
+<p><code>$ ssh-keygen -t rsa -C &quot;你的邮箱地址&quot;</code>（注意，C和你的邮箱地址都是要输入的)</p>
 <p>接下来的事情，就是连续三次回车（最安全的密码就是没有密码），可以看见在你所Git Bash Here的路径新生成了两个文件，id_rsa.pub，我们用记事本打开，复制里面的全部内容。</p>
 <p>紧接着，我们打开GitHub，右上角点击自己的头像，选择设置，然后选择SSH和GPG密钥，</p>
 <p><img src="/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/2.png" alt="2"></p>
@@ -145,42 +145,42 @@
 <p><img src="/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/3.png" alt="3"></p>
 <p><strong>到了发布这个激动人心的时候了</strong></p>
 <p>打开我们之前创建的项目，找到_config.yml文件，用记事本打开，在文本的最后我们可以看到</p>
-<p><em><code></code>deploy:</em><code></code></p>
-<p>  <code>*type:</code>*</p>
+<p><code>deploy:</code></p>
+<p>  <code>type:</code></p>
 <p>我们要修改成这样：</p>
-<p><em><code></code>deploy: git</em><code></code></p>
-<p> <code>*type: git@github.com:qq959553568/dyt1011.github.io.git*(这里要换成你的SSH密钥)</code></p>
-<p> <code>*repository: master</code>*</p>
+<p><code>deploy: git</code></p>
+<p> <code>type: git@github.com:qq959553568/dyt1011.github.io.git(这里要换成你的SSH密钥)</code></p>
+<p> <code>repository: master</code></p>
 <p>(注意：在:后面要空格)</p>
 <p>你的SSH密钥在你所创建的储存库里面，如下图</p>
 <p><img src="/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/4.png" alt="4"></p>
 <p>修改完成之后，保存即可。然后在我们Hexo项目的目录下，Git Bash以下命令</p>
-<p><em>hexo d</em>(将本地文件传到GitHub储存库)</p>
+<p><code>hexo d(</code>将本地文件传到GitHub储存库)</p>
 <p>如果输入后无反应，或者出现ERROR等报错情况，你可以尝试</p>
-<p><em><code></code>hexo clean</em><code></code></p>
-<p><code>*hexo g -d</code>*</p>
+<p><code>hexo clean</code></p>
+<p><code>hexo g -d</code></p>
 <p>或者是</p>
-<p><em><code>npm install hexo-deployer-git --save</code></em></p>
+<p><code>npm install hexo-deployer-git --save</code></p>
 <p>如果还是有问题，删除所建的文件，重新安装Hexo（删除大法）</p>
 <p>这样就大功告成了。通过地址</p>
-<p>https://自己的用户名/储存库名.github.io/</p>
+<p><code>https://自己的用户名/储存库名.github.io/</code></p>
 <p>来访问你自己的博客</p>
 <p>当然如果你有自己域名，可以绑定自己的域名。比如，我在腾讯云购买的域名</p>
 <p><img src="/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/5.png" alt="5"></p>
 <p>点击解析之后</p>
 <p><img src="/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/6.png" alt="6"></p>
 <p>你可以模仿我这个填，ip地址可以通过cmd控制台，ping你的博客地址，获取对应的Ip地址，命令如下：</p>
-<p><code>*ping 你的博客地址*</code></p>
+<p><code>ping 你的博客地址</code></p>
 <p>除此之外，你还需要在你的Hexo本地文件里，找到source文件夹，在里面新建一个文件，名字为CNAME，用记事本打开，在里面输入自己所购买的域名即可。</p>
 <p>我自己在做我的博客时候，遇到的最多的问题就是hexo d这个命令传到GitHub储存库中的时候，本地文件有样式，而，GitHub里面只剩文字，这个问题的解决方案就是，打开我们的Hexo项目，以记事本打开_config.yml，找到#URL，然后</p>
-<p><em><code></code>url: http://你的域名</em><code></code></p>
-<p><code>*root: /</code>*</p>
+<p><code>url: http://你的域名</code></p>
+<p><code>root: /</code></p>
 <p>(注意:后面有空格)</p>
 <p>然后，你会惊奇的发现，你的第一个博客，可以通过你自己的域名访问了。Hexo有很多主题，而且使用方法百度也有很多内容，大家可以自己去选择自己喜欢的主题。</p>
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2019年04月13日 15:33</p>
+        <p>最后更新： 2019年04月13日 15:38</p>
         <p>原始链接： <a class="post-url" href="/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/" title>http://qq959553568.github.io/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/</a></p>
         <footer>
             <a href="http://qq959553568.github.io">
