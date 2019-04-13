@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>dyt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="邓永涛，邓永涛的博客">
+  
+  <meta name="description" content="第一次使用GitHub、Hexo(Node.js),把自己的学习心得写下来，希望能帮助别人，也给自己留个纪念。 采用Hexo+GitHub搭建博客的想法，是我一个朋友推荐我的，所以我就百度了一些教程，再加上向朋友的讨教，所以用Hexo+GitHub的方案搭建了现在大家所阅读到的这个博客，Hexo+GitHub的方案都是开源的，适合我们初学者使用。 这里面的操作基本参照网上的教程，但是单独的某篇讲的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="dyt">
+<meta property="og:url" content="http://qq959553568.github.io/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/index.html">
+<meta property="og:site_name" content="dyt">
+<meta property="og:description" content="第一次使用GitHub、Hexo(Node.js),把自己的学习心得写下来，希望能帮助别人，也给自己留个纪念。 采用Hexo+GitHub搭建博客的想法，是我一个朋友推荐我的，所以我就百度了一些教程，再加上向朋友的讨教，所以用Hexo+GitHub的方案搭建了现在大家所阅读到的这个博客，Hexo+GitHub的方案都是开源的，适合我们初学者使用。 这里面的操作基本参照网上的教程，但是单独的某篇讲的">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://qq959553568.github.io/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/1.png">
+<meta property="og:image" content="http://qq959553568.github.io/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/2.png">
+<meta property="og:image" content="http://qq959553568.github.io/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/3.png">
+<meta property="og:image" content="http://qq959553568.github.io/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/4.png">
+<meta property="og:image" content="http://qq959553568.github.io/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/5.png">
+<meta property="og:image" content="http://qq959553568.github.io/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/6.png">
+<meta property="og:updated_time" content="2019-04-13T07:38:46.330Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="dyt">
+<meta name="twitter:description" content="第一次使用GitHub、Hexo(Node.js),把自己的学习心得写下来，希望能帮助别人，也给自己留个纪念。 采用Hexo+GitHub搭建博客的想法，是我一个朋友推荐我的，所以我就百度了一些教程，再加上向朋友的讨教，所以用Hexo+GitHub的方案搭建了现在大家所阅读到的这个博客，Hexo+GitHub的方案都是开源的，适合我们初学者使用。 这里面的操作基本参照网上的教程，但是单独的某篇讲的">
+<meta name="twitter:image" content="http://qq959553568.github.io/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/1.png">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+</html>
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">邓永涛的博客</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a href="/">
+                        <i class="fa fa-home"></i>
+                        <span>主页</span>
+                    </a>
+                    
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>全部目录</span>
+                    </a>
+                    
+                    <a href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>关于我</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        邓永涛的博客
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        一个分享实用经验的技术博客
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="Github" target="_blank" href="//github.com/qq959553568">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="微博" target="_blank" href="//weibo.com/u/6015860876">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-Hexo+GitHub以及绑定域名的使用心得" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <p>第一次使用GitHub、Hexo(Node.js),把自己的学习心得写下来，希望能帮助别人，也给自己留个纪念。</p>
+<p>采用Hexo+GitHub搭建博客的想法，是我一个朋友推荐我的，所以我就百度了一些教程，再加上向朋友的讨教，所以用Hexo+GitHub的方案搭建了现在大家所阅读到的这个博客，Hexo+GitHub的方案都是开源的，适合我们初学者使用。</p>
+<p>这里面的操作基本参照网上的教程，但是单独的某篇讲的又有些问题，所以在这里综合我所遇到的问题，给大家分享一下，如何使用Hexo+GitHub搭建自己的博客</p>
+<p><strong>直奔主题，首先安装Git</strong></p>
+<p>首先打开<a href="https://git-scm.com/" target="_blank" rel="noopener">Git官网</a>，下载并安装<a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a>，推荐采用默认路径。（Git的功能很多，有兴趣的朋友可以自学)</p>
+<p><strong>接下来是Node.js的安装（帮助我们下载Hexo的工具)</strong></p>
+<p><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>有什么用呢？在本篇文章，它主要是负责帮助我们下载我们所需的Hexo。</p>
+<p>第一步：下载并安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></p>
+<p>进入官网，选择自己对应的操作系统，下载好以后自己选个位置（建议提前建立好文件方便储存，这是个好习惯）安装即可。</p>
+<p>安装完之后同时按住Win+R，然后输入cmd打开控制台并输入以下代码：</p>
+<p><code>node -v</code></p>
+<p><code>npm -v</code></p>
+<p>注意node、npm的后面都有一个空格，如果正常安装，输入这两个命令，会显示它们的版本号。</p>
+<p>第二步：安装Hexo</p>
+<p>我们之前已经安装了Git，所以我们可以使用它的Git Bash Here（右键单击可见），来帮助我们更好的安装Hexo。</p>
+<p>首先我们要新建一个存放Hexo文件的目录，自己创建一个自己能找得到的地方，然后在该目录下，右键然后单击Git Bash Here，就可以打开类似控制台的界面，我们就可以输入命令，进行安装，我们输入以下代码：</p>
+<p><code>$npm install hexo-cli -g</code></p>
+<p><code>$hexo init</code></p>
+<p><code>$npm install</code></p>
+<p><code>$hexo g</code></p>
+<p><code>$hexo s</code></p>
+<p>注意：$是一开始就有的，不用输入，同时注意空格的输入，下文中的代码我将不写$</p>
+<p>上述命令输入完毕后，在我们的浏览器地址栏处输入localhost:4000(4000是默认的端口号)，回车之后，就是见证奇迹的时刻，你的第一个博客的模型就出来了。当然现在它只能本地浏览，我们要做的就是让他可以在互联网上被访问。</p>
+<p><strong>因此，我们要通过GitHub部署到互联网上</strong></p>
+<p>首先，我们要去注册一个GitHub的账号，邮箱尽量填写自己常用的。（在这里推荐大家使用谷歌浏览器，因为它可以自动翻译英语成中文，很方便）</p>
+<p>在翻译成中文界面，可以看见下图</p>
+<p><img src="/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/1.png" alt="1"></p>
+<p>单击启动项目，在存储库名称填写：<em>你喜欢的名字.github.io</em></p>
+<p><strong>接下来时创建SHH</strong></p>
+<p>在Git Bash（可以直接在桌面使用)输入命令：</p>
+<p><code>$ ssh-keygen -t rsa -C &quot;你的邮箱地址&quot;</code>（注意，C和你的邮箱地址都是要输入的)</p>
+<p>接下来的事情，就是连续三次回车（最安全的密码就是没有密码），可以看见在你所Git Bash Here的路径新生成了两个文件，id_rsa.pub，我们用记事本打开，复制里面的全部内容。</p>
+<p>紧接着，我们打开GitHub，右上角点击自己的头像，选择设置，然后选择SSH和GPG密钥，</p>
+<p><img src="/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/2.png" alt="2"></p>
+<p>标题可以随便写，在键里面，粘贴我们刚刚复制的内容。然后点击添加SHH密钥</p>
+<p><img src="/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/3.png" alt="3"></p>
+<p><strong>到了发布这个激动人心的时候了</strong></p>
+<p>打开我们之前创建的项目，找到_config.yml文件，用记事本打开，在文本的最后我们可以看到</p>
+<p><code>deploy:</code></p>
+<p>  <code>type:</code></p>
+<p>我们要修改成这样：</p>
+<p><code>deploy: git</code></p>
+<p> <code>type: git@github.com:qq959553568/dyt1011.github.io.git(这里要换成你的SSH密钥)</code></p>
+<p> <code>repository: master</code></p>
+<p>(注意：在:后面要空格)</p>
+<p>你的SSH密钥在你所创建的储存库里面，如下图</p>
+<p><img src="/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/4.png" alt="4"></p>
+<p>修改完成之后，保存即可。然后在我们Hexo项目的目录下，Git Bash以下命令</p>
+<p><code>hexo d(</code>将本地文件传到GitHub储存库)</p>
+<p>如果输入后无反应，或者出现ERROR等报错情况，你可以尝试</p>
+<p><code>hexo clean</code></p>
+<p><code>hexo g -d</code></p>
+<p>或者是</p>
+<p><code>npm install hexo-deployer-git --save</code></p>
+<p>如果还是有问题，删除所建的文件，重新安装Hexo（删除大法）</p>
+<p>这样就大功告成了。通过地址</p>
+<p><code>https://自己的用户名/储存库名.github.io/</code></p>
+<p>来访问你自己的博客</p>
+<p>当然如果你有自己域名，可以绑定自己的域名。比如，我在腾讯云购买的域名</p>
+<p><img src="/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/5.png" alt="5"></p>
+<p>点击解析之后</p>
+<p><img src="/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/6.png" alt="6"></p>
+<p>你可以模仿我这个填，ip地址可以通过cmd控制台，ping你的博客地址，获取对应的Ip地址，命令如下：</p>
+<p><code>ping 你的博客地址</code></p>
+<p>除此之外，你还需要在你的Hexo本地文件里，找到source文件夹，在里面新建一个文件，名字为CNAME，用记事本打开，在里面输入自己所购买的域名即可。</p>
+<p>我自己在做我的博客时候，遇到的最多的问题就是hexo d这个命令传到GitHub储存库中的时候，本地文件有样式，而，GitHub里面只剩文字，这个问题的解决方案就是，打开我们的Hexo项目，以记事本打开_config.yml，找到#URL，然后</p>
+<p><code>url: http://你的域名</code></p>
+<p><code>root: /</code></p>
+<p>(注意:后面有空格)</p>
+<p>然后，你会惊奇的发现，你的第一个博客，可以通过你自己的域名访问了。Hexo有很多主题，而且使用方法百度也有很多内容，大家可以自己去选择自己喜欢的主题。</p>
+
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2019年04月13日 15:38</p>
+        <p>原始链接： <a class="post-url" href="/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/" title>http://qq959553568.github.io/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/</a></p>
+        <footer>
+            <a href="http://qq959553568.github.io">
+                <img src="/images/logo.png" alt="dyt">
+                dyt
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+            
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;">赏</a>
+</div>
+
+<div id="reward" class="post-modal reward-lay">
+    <a class="close" href="javascript:;" id="reward-close">×</a>
+    <span class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        请我喝冰阔落~
+        <i class="icon icon-quote-right"></i>
+    </span>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/images/wechat_code.png" alt="打赏二维码">
+        </div>
+        <div class="reward-select">
+            
+            <label class="reward-select-item checked" data-id="wechat" data-wechat="/images/wechat_code.png">
+                <img class="reward-select-item-wechat" src="/images/wechat.png" alt="微信">
+            </label>
+            
+            
+            <label class="reward-select-item" data-id="alipay" data-alipay="/images/alipay_code.png">
+                <img class="reward-select-item-alipay" src="/images/alipay.png" alt="支付宝">
+            </label>
+            
+        </div>
+    </div>
+</div>
+
+
+        
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://qq959553568.github.io/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/&title=dyt&pic=http://qq959553568.github.ioimages/logo.png" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://qq959553568.github.io/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/&title=dyt&source=" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://qq959553568.github.io/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=dyt&url=http://qq959553568.github.io/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/&via=http://qq959553568.github.io" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://qq959553568.github.io/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://qq959553568.github.io/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">dyt</a>
+        Theme <a href="//github.com/qq95953568/dyt1011" target="_blank">dyt</a>
+      &copy; 2019 dyt<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://qq959553568.github.io",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 1
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            
+        </div>
+        <div id="sidebar-menu-box-tags">
+            
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a href="/">
+                    <i class="fa fa-home"></i><span>主页</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/archives">
+                    <i class="fa fa-archive"></i><span>全部目录</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/about">
+                    <i class="fa fa-user"></i><span>关于我</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+<script type="text/javascript" src="/js/clickaiguo.js"></script>
+  </div>
+</body>
+</html>
