@@ -138,17 +138,17 @@
 <p>上述命令输入完毕后，在我们的浏览器地址栏处输入localhost:4000(4000是默认的端口号)，回车之后，就是见证奇迹的时刻，你的第一个博客的模型就出来了。当然现在它只能本地浏览，我们要做的就是让他可以在互联网上被访问。</p>
 <p><strong>因此，我们要通过GitHub部署到互联网上</strong></p>
 <p>首先，我们要去注册一个GitHub的账号，邮箱尽量填写自己常用的。（在这里推荐大家使用谷歌浏览器，因为它可以自动翻译英语成中文，很方便）</p>
-<p>在翻译成中文界面!</p>
-<p><img src="C:\Users\DYT\Desktop\1.png" alt="1"></p>
+<p>在翻译成中文界面，可以看见下图</p>
+<p><img src="/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/Hexo\dyt\source\_posts\Hexo+GitHub以及绑定域名的使用心得\1.png" alt="1"></p>
 <p>单击启动项目，在存储库名称填写：<em>你喜欢的名字.github.io</em></p>
 <p><strong>接下来时创建SHH</strong></p>
 <p>在Git Bash（可以直接在桌面使用)输入命令：</p>
 <p><em>$ ssh-keygen -t rsa -C “你的邮箱地址”</em>（注意，C和你的邮箱地址都是要输入的)</p>
 <p>接下来的事情，就是连续三次回车（最安全的密码就是没有密码），可以看见在你所Git Bash Here的路径新生成了两个文件，id_rsa.pub，我们用记事本打开，复制里面的全部内容。</p>
 <p>紧接着，我们打开GitHub，右上角点击自己的头像，选择设置，然后选择SSH和GPG密钥，</p>
-<p><img src="C:\Users\DYT\Desktop\2.png" alt="2"></p>
+<p><img src="/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/Hexo\dyt\source\_posts\Hexo+GitHub以及绑定域名的使用心得\2.png" alt="2"></p>
 <p>标题可以随便写，在键里面，粘贴我们刚刚复制的内容。然后点击添加SHH密钥</p>
-<p><img src="C:\Users\DYT\Desktop\3.png" alt="3"></p>
+<p><img src="/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/Hexo\dyt\source\_posts\Hexo+GitHub以及绑定域名的使用心得\3.png" alt="3"></p>
 <p><strong>到了发布这个激动人心的时候了</strong></p>
 <p>打开我们之前创建的项目，找到_config.yml文件，用记事本打开，在文本的最后我们可以看到</p>
 <p><em>deploy:</em></p>
@@ -159,7 +159,7 @@
 <p> <em>repository: master</em></p>
 <p>(注意：在:后面要空格)</p>
 <p>你的SSH密钥在你所创建的储存库里面，如下图</p>
-<p><img src="C:\Users\DYT\Desktop\4.png" alt="4"></p>
+<p><img src="/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/Hexo\dyt\source\_posts\Hexo+GitHub以及绑定域名的使用心得\4.png" alt="4"></p>
 <p>修改完成之后，保存即可。然后在我们Hexo项目的目录下，Git Bash以下命令</p>
 <p><em>hexo d</em>(将本地文件传到GitHub储存库)</p>
 <p>如果输入后无反应，或者出现ERROR等报错情况，你可以尝试</p>
@@ -172,9 +172,9 @@
 <p>https://自己的用户名/储存库名.github.io/</p>
 <p>来访问你自己的博客</p>
 <p>当然如果你有自己域名，可以绑定自己的域名。比如，我在腾讯云购买的域名</p>
-<p><img src="C:\Users\DYT\Desktop\5.png" alt="5"></p>
+<p><img src="/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/Hexo\dyt\source\_posts\Hexo+GitHub以及绑定域名的使用心得\5.png" alt="5"></p>
 <p>点击解析之后</p>
-<p><img src="C:\Users\DYT\AppData\Roaming\Typora\typora-user-images\1555133116846.png" alt="1555133116846"></p>
+<p><img src="/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/Hexo\dyt\source\_posts\Hexo+GitHub以及绑定域名的使用心得\6.png" alt="6"></p>
 <p>你可以模仿我这个填，ip地址可以通过cmd控制台，ping你的博客地址，获取对应的Ip地址，命令如下：</p>
 <p><em>ping 你的博客地址</em></p>
 <p>除此之外，你还需要在你的Hexo本地文件里，找到source文件夹，在里面新建一个文件，名字为CNAME，用记事本打开，在里面输入自己所购买的域名即可。</p>
@@ -186,7 +186,7 @@
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2019年04月13日 13:47</p>
+        <p>最后更新： 2019年04月13日 14:05</p>
         <p>原始链接： <a class="post-url" href="/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/" title>http://qq959553568.github.io/2019/04/13/Hexo+GitHub以及绑定域名的使用心得/</a></p>
         <footer>
             <a href="http://qq959553568.github.io">
